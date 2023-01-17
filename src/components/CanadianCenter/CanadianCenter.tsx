@@ -1,3 +1,5 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 import "./CanadianCenter.scss";
 
 import canadian_center_logo from "../../assets/photos/canadian-center/canadian_center-logo.svg";
@@ -6,6 +8,29 @@ import horizontal_line from "../../assets/photos/canadian-center/horizontal-line
 import trust_logo from "../../assets/photos/canadian-center/trust-logo.svg";
 import trust_values from "../../assets/photos/canadian-center/trust-values.svg";
 import mask_wrapper from "../../assets/photos/canadian-center/mask-wrapper.svg";
+import treatment_main from "../../assets/photos/canadian-center/treatment-main.svg";
+import treatment_bckg from "../../assets/photos/canadian-center/treatment-bckg.svg";
+import life_bckg from "../../assets/photos/canadian-center/life-bckg.svg";
+import toronto_bckg from "../../assets/photos/canadian-center/toronto-bckg.svg";
+import toronto_main from "../../assets/photos/canadian-center/toronto-main.svg";
+import effective_bckg from "../../assets/photos/canadian-center/effective-bckg.svg";
+import effective_main from "../../assets/photos/canadian-center/effective-main.svg";
+import formula_bckg from "../../assets/photos/canadian-center/formula-bckg.svg";
+import formula_main from "../../assets/photos/canadian-center/formula-main.svg";
+import care from "../../assets/photos/canadian-center/care.svg";
+import amenities from "../../assets/photos/canadian-center/amenities.svg";
+import general_bckg from "../../assets/photos/canadian-center/general-bckg.svg";
+import wrapper_bckg from "../../assets/photos/canadian-center/wrapper-second.svg";
+import recovery from "../../assets/photos/canadian-center/recovery.svg";
+import patients from "../../assets/photos/canadian-center/patients.svg";
+import help from "../../assets/photos/canadian-center/help.svg";
+import search_wrapper from "../../assets/photos/canadian-center/search-wrapper.svg";
+import news_block from "../../assets/photos/canadian-center/news-block.svg";
+import unskool from "../../assets/photos/canadian-center/unskool.svg";
+import catering from "../../assets/photos/canadian-center/catering.svg";
+import reno from "../../assets/photos/canadian-center/reno.svg";
+import newme from "../../assets/photos/canadian-center/newme.svg";
+import miia from "../../assets/photos/canadian-center/miia.svg";
 
 const CanadianCenter = () => {
   return (
@@ -50,28 +75,35 @@ const CanadianCenter = () => {
         </div>
       </main>
       <section className="canadian-center__treatment-section treatment-section">
-        <div className="treatment-section-info-block">
-          <h2 className="treatment-section-info-block-title">
-            National Leader in Addiction Treatment
-          </h2>
-          <img
-            src={horizontal_line}
-            alt="horizontal_line"
-            className="line-info-block"
-          />
-          <span className="treatment-section-info-block-subtitle">
-            Our goal will always be simple: to keep our word to our residents
-            and help them through every stage of alcohol and drug addiction
-            treatment.
-            <br />
-            <br />
-            Our focus on quality care helps us deliver a clear message to anyone
-            wanting to overcome addiction in a caring, supportive environment.
-            Everything we do and everything we are is a reflection of the
-            profound experience we want for those in our care.
-          </span>
-          <img className="mask_wrapper" src={mask_wrapper} alt="mask_wrapper" />
-        </div>
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+          <div className="treatment-section-info-block">
+            <h2 className="treatment-section-info-block-title">
+              National Leader in Addiction Treatment
+            </h2>
+            <img
+              src={horizontal_line}
+              alt="horizontal_line"
+              className="line-info-block"
+            />
+            <span className="treatment-section-info-block-subtitle">
+              Our goal will always be simple: to keep our word to our residents
+              and help them through every stage of alcohol and drug addiction
+              treatment.
+              <br />
+              <br />
+              Our focus on quality care helps us deliver a clear message to
+              anyone wanting to overcome addiction in a caring, supportive
+              environment. Everything we do and everything we are is a
+              reflection of the profound experience we want for those in our
+              care.
+            </span>
+            <img
+              className="mask_wrapper"
+              src={mask_wrapper}
+              alt="mask_wrapper"
+            />
+          </div>
+        </AnimationOnScroll>
         <div className="treatment-section-logos-block">
           <img
             className="treatment-section-logos-block-trust"
@@ -299,6 +331,244 @@ const CanadianCenter = () => {
             </div>
           </div>
         </div>
+        <div className="pallete-section-fonts">
+          <div className="pallete-section-fonts-header">
+            <h1 className="pallete-section-fonts-header__title">Fonts</h1>
+            <div className="pallete-section-fonts-header__horizontal-line"></div>
+          </div>
+          <div className="pallete-section-fonts__example-section example-section">
+            <div className="example-section-top">
+              <div className="example-section-top-butler">
+                <ul className="example-section-top-butler-headers">
+                  <li className="example-section-top-butler-headers__item">
+                    <span className="example-section-top-butler-headers__item-heading-bold">
+                      H1
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-bold">
+                      Butler Bold
+                    </span>
+                  </li>
+                  <li className="example-section-top-butler-headers__item">
+                    <span className="example-section-top-butler-headers__item-heading-medium">
+                      H2
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-medium">
+                      Butler Medium
+                    </span>
+                  </li>
+                  <li className="example-section-top-butler-headers__item">
+                    <span className="example-section-top-butler-headers__item-heading-small">
+                      H3
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-small">
+                      Butler Medium
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="example-section-top-alphabet">
+                <AnimationOnScroll
+                  animateOnce={true}
+                  animateIn="animate__fadeInUp">
+                  <h3 className="example-section-top-alphabet__uppercase">
+                    abcdefghijklmnopqrstuvwxyz
+                  </h3>
+                </AnimationOnScroll>
+                <AnimationOnScroll
+                  animateOnce={true}
+                  delay={0.2}
+                  animateIn="animate__fadeInUp">
+                  <span className="example-section-top-alphabet__lowercase">
+                    abcdefghijklmnopqrstuvwxyz
+                  </span>
+                </AnimationOnScroll>
+              </div>
+            </div>
+            <div className="example-section-top">
+              <div className="example-section-top-butler">
+                <ul className="example-section-top-butler-headers">
+                  <li className="example-section-top-butler-headers__item headers-item">
+                    <span className="example-section-top-butler-headers__item-heading-bold">
+                      H1
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-bold-helvetica">
+                      HelveticaNeueCyr Medium
+                    </span>
+                  </li>
+                  <li className="example-section-top-butler-headers__item headers-item">
+                    <span className="example-section-top-butler-headers__item-heading-medium">
+                      Body1
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-medium-helvetica">
+                      HelveticaNeueCyr Medium
+                    </span>
+                  </li>
+                  <li className="example-section-top-butler-headers__item headers-item">
+                    <span className="example-section-top-butler-headers__item-heading-small">
+                      Body2
+                    </span>
+                    <span className="example-section-top-butler-headers__item-weight-small-helvetica">
+                      HelveticaNeueCyr Light
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <AnimationOnScroll
+                animateOnce={true}
+                animateIn="animate__fadeInUp">
+                <div className="example-section-top-alphabet-helvetica">
+                  <h3 className="example-section-top-alphabet-helvetica__uppercase">
+                    abcdefghijklmnopqrstuvwxyz
+                  </h3>
+
+                  <span className="example-section-top-alphabet-helvetica__lowercase">
+                    abcdefghijklmnopqrstuvwxyz
+                  </span>
+                </div>
+              </AnimationOnScroll>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="canadian-center__programs programs">
+        <img
+          src={treatment_bckg}
+          alt="treatment_bckg"
+          className="programs__treatment-bckg"
+        />
+
+        <img
+          src={treatment_main}
+          alt="treatment_main"
+          className="programs__treatment-main"
+        />
+        <img src={life_bckg} alt="life_bckg" className="programs__life-bckg" />
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+          <div className="programs-about">
+            <h1 className="programs-about__title">Treatment programs</h1>
+            <div className="programs-about-line-horizontal" />
+            <p className="programs-about__info">
+              On this page, we have posted all our treatment programs.The user
+              can get acquainted with each program in more detail, having read
+              all the nuances of treatment inherent in a particular treatment
+              program.
+            </p>
+          </div>
+        </AnimationOnScroll>
+        <img
+          src={toronto_bckg}
+          alt="toronto_bckg"
+          className="programs__toronto-bckg"
+        />
+        <img
+          src={toronto_main}
+          alt="toronto_main"
+          className="programs__toronto-main"
+        />
+        <img
+          src={effective_bckg}
+          alt="effective_bckg"
+          className="programs__effective-bckg"
+        />
+        <img
+          src={effective_main}
+          alt="effective_main"
+          className="programs__effective-main"
+        />
+        <img
+          src={formula_bckg}
+          alt="effective_bckg"
+          className="programs__formula-bckg"
+        />
+        <img
+          src={formula_main}
+          alt="effective_main"
+          className="programs__formula-main"
+        />
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+          <div className="programs-life">
+            <h1 className="programs-life__title">Life at CCFA</h1>
+            <div className="programs-life-line-horizontal" />
+            <p className="programs-life__info">
+              Seeking Inpatient care doesn't mean turning your life upside down.
+              <br />
+              <br />
+              We tailor your recovery so you can remain connected to your life
+              and responsibilities in the world outside so you transition back
+              into normal life is as smooth as possible.
+            </p>
+          </div>
+        </AnimationOnScroll>
+        <img src={care} alt="care" className="programs__care" />
+        <img src={amenities} alt="amenities" className="programs__amenities" />
+        <img
+          src={general_bckg}
+          alt="general-bckg"
+          className="programs__wrapper-first"
+        />
+        <img
+          src={wrapper_bckg}
+          alt="wrapper_bckg"
+          className="programs__wrapper-bckg"
+        />
+        <img src={recovery} alt="recovery" className="programs__recovery" />
+        <img src={patients} alt="patients" className="programs__patients" />
+      </section>
+      <section className="canadian-center__learning-block learning-block">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInUp">
+          <div className="learning-block-about">
+            <h1 className="learning-block-about__title">Learning center</h1>
+            <div className="learning-block-about-line-horizontal" />
+            <p className="learning-block-about__info">
+              Here the user can read the information on any topic that interests
+              him, it is a full-fledged blog, with the ability to search for a
+              topic, there is also a search by tags, all this helps to
+              facilitate the search for user
+            </p>
+          </div>
+        </AnimationOnScroll>
+        <img src={help} alt="help" className="learning-block__help" />
+        <img
+          src={search_wrapper}
+          alt="search_wrapper"
+          className="learning-block__search-wrapper"
+        />
+        <img
+          src={news_block}
+          alt="news_block"
+          className="learning-block__news-block"
+        />
+      </section>
+      <section className="canadian-center__mobile-wireframes-big mobile-wireframes-big">
+        <div className="mobile-wireframes-big-about">
+          <h1 className="mobile-wireframes-big-about__title">Mobile version</h1>
+          <div className="mobile-wireframes-big-about-line-horizontal" />
+        </div>
+      </section>
+      <section className="canadian-center__projects projects">
+        <h1 className="projects__title">Check out more projects</h1>
+        <ul className="projects__list">
+          <li>
+            <img className="projects__list-logo" src={miia} alt="miia" />
+          </li>
+          <li>
+            <img className="projects__list-logo" src={newme} alt="newme" />
+          </li>
+          <li>
+            <img className="projects__list-logo" src={reno} alt="reno" />
+          </li>
+          <li>
+            <img
+              className="projects__list-logo"
+              src={catering}
+              alt="catering"
+            />
+          </li>
+          <li>
+            <img className="projects__list-logo" src={unskool} alt="unskool" />
+          </li>
+        </ul>
       </section>
     </div>
   );
