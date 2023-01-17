@@ -20,6 +20,10 @@ import setting from "../../../assets/photos/services/team/setting.svg";
 import project from "../../../assets/photos/services/team/project.svg";
 import plus from "../../../assets/photos/services/team/plus.svg";
 import minus from "../../../assets/photos/services/team/minus.svg";
+import new_me from "../../../assets/photos/home/new-me.svg";
+import rehab from "../../../assets/photos/home/rehab.svg";
+import laptop_new from "../../../assets/photos/services/team/laptop-new.svg";
+import team_group from "../../../assets/photos/services/team/team-group.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export const TeamServices = () => {
@@ -67,10 +71,7 @@ export const TeamServices = () => {
               Dedicated<span>Team Service</span>
             </h2>
             <div className="adding__laptop">
-              <img
-                src={require("../../../assets/photos/services/team/laptop.png")}
-                alt="laptop"
-              />
+              <img src={laptop_new} alt="laptop" />
             </div>
           </div>
         </div>
@@ -97,8 +98,7 @@ export const TeamServices = () => {
         <AnimationOnScroll
           animateOnce={true}
           animateIn="animate__fadeInUp"
-          className="animated"
-        >
+          className="animated">
           <div className="build__desc">
             <h2 className="build__desc-title">
               Dedicated team<span>approach: overview</span>
@@ -127,8 +127,7 @@ export const TeamServices = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="benef">
           <h2 className="benef__title">
             Benefits of our dedicated development team
@@ -144,8 +143,7 @@ export const TeamServices = () => {
                 onClick={() => {
                   resetAll();
                   setFlexible(!flexible);
-                }}
-              >
+                }}>
                 <div className="opener__switcher">
                   <p className="opener__switcher-title">
                     Flexible development model
@@ -154,8 +152,7 @@ export const TeamServices = () => {
                     className={classNames({
                       "opener__switcher-icon": true,
                       bord: flexible,
-                    })}
-                  >
+                    })}>
                     {flexible ? (
                       <img src={minus} alt="minus icon" />
                     ) : (
@@ -167,14 +164,12 @@ export const TeamServices = () => {
                   className={classNames({
                     opener__desc: true,
                     resize: flexible,
-                  })}
-                >
+                  })}>
                   <p
                     className={classNames({
                       "opener__desc-text": true,
                       active: flexible,
-                    })}
-                  >
+                    })}>
                     Adjusting the size of your remote team to your actual needs
                     has never been easier and faster than when you are paying on
                     a monthly basis. All you need is to send a month's notice to
@@ -193,23 +188,20 @@ export const TeamServices = () => {
                 onClick={() => {
                   resetAll();
                   setFocus(!focus);
-                }}
-              >
+                }}>
                 <div className="opener__switcher">
                   <p
                     className={classNames({
                       "opener__switcher-title": true,
                       whitening: focus,
-                    })}
-                  >
+                    })}>
                     Focus on core business activites
                   </p>
                   <div
                     className={classNames({
                       "opener__switcher-icon": true,
                       bord: focus,
-                    })}
-                  >
+                    })}>
                     {focus ? (
                       <img src={minus} alt="minus icon" />
                     ) : (
@@ -221,14 +213,12 @@ export const TeamServices = () => {
                   className={classNames({
                     opener__desc: true,
                     resize: focus,
-                  })}
-                >
+                  })}>
                   <p
                     className={classNames({
                       "opener__desc-text": true,
                       active: focus,
-                    })}
-                  >
+                    })}>
                     Multitasking kills productivity. Staying focused on one
                     project 100% of the time, as dedicated teams do, increases
                     productivity exponentially. Outsourcing a function to
@@ -247,23 +237,20 @@ export const TeamServices = () => {
                 onClick={() => {
                   resetAll();
                   setTime(!time);
-                }}
-              >
+                }}>
                 <div className="opener__switcher">
                   <p
                     className={classNames({
                       "opener__switcher-title": true,
                       whitening: time,
-                    })}
-                  >
+                    })}>
                     Time and cost effectiveness
                   </p>
                   <div
                     className={classNames({
                       "opener__switcher-icon": true,
                       bord: time,
-                    })}
-                  >
+                    })}>
                     {time ? (
                       <img src={minus} alt="minus icon" />
                     ) : (
@@ -275,14 +262,12 @@ export const TeamServices = () => {
                   className={classNames({
                     opener__desc: true,
                     resize: time,
-                  })}
-                >
+                  })}>
                   <p
                     className={classNames({
                       "opener__desc-text": true,
                       active: time,
-                    })}
-                  >
+                    })}>
                     Higher rates of software developers' fees in the US and
                     Canada make this labor market less attractive for clients
                     who know the real value of money. With a dedicated software
@@ -303,23 +288,20 @@ export const TeamServices = () => {
                 onClick={() => {
                   resetAll();
                   setExpertise(!expertise);
-                }}
-              >
+                }}>
                 <div className="opener__switcher">
                   <p
                     className={classNames({
                       "opener__switcher-title": true,
                       whitening: expertise,
-                    })}
-                  >
+                    })}>
                     Expertise
                   </p>
                   <div
                     className={classNames({
                       "opener__switcher-icon": true,
                       bord: expertise,
-                    })}
-                  >
+                    })}>
                     {expertise ? (
                       <img src={minus} alt="minus icon" />
                     ) : (
@@ -331,14 +313,12 @@ export const TeamServices = () => {
                   className={classNames({
                     opener__desc: true,
                     resize: expertise,
-                  })}
-                >
+                  })}>
                   <p
                     className={classNames({
                       "opener__desc-text": true,
                       active: expertise,
-                    })}
-                  >
+                    })}>
                     The primary drivers of hiring remote teams are global
                     expansion and unlimited access to the best talent worldwide.
                     Talent acquisition can be a problem due to the scarcity of a
@@ -361,23 +341,20 @@ export const TeamServices = () => {
                 onClick={() => {
                   resetAll();
                   setBroader(!broader);
-                }}
-              >
+                }}>
                 <div className="opener__switcher">
                   <p
                     className={classNames({
                       "opener__switcher-title": true,
                       whitening: broader,
-                    })}
-                  >
+                    })}>
                     Long-term engagement
                   </p>
                   <div
                     className={classNames({
                       "opener__switcher-icon": true,
                       bord: broader,
-                    })}
-                  >
+                    })}>
                     {broader ? (
                       <img src={minus} alt="minus icon" />
                     ) : (
@@ -389,14 +366,12 @@ export const TeamServices = () => {
                   className={classNames({
                     opener__desc: true,
                     resize: broader,
-                  })}
-                >
+                  })}>
                   <p
                     className={classNames({
                       "opener__desc-text": true,
                       active: broader,
-                    })}
-                  >
+                    })}>
                     If you are looking for stability and long-term
                     collaboration, signing a contract with a dedicated
                     development team is a winning business strategy. Finding a
@@ -410,10 +385,7 @@ export const TeamServices = () => {
               </div>
             </div>
             <div className="benef__container-photo">
-              <img
-                src={require("../../../assets/photos/services/team/dedic-benef.png")}
-                alt="team"
-              />
+              <img src={team_group} alt="team" />
             </div>
           </div>
         </section>
@@ -496,8 +468,7 @@ export const TeamServices = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="model">
           <h2 className="model__title">Dedicated development team model</h2>
           <div className="model__container">
@@ -620,8 +591,7 @@ export const TeamServices = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -635,16 +605,13 @@ export const TeamServices = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">
                   <img
                     className="back-desktop"
-                    src={require("../../../assets/photos/examples/rehab.png")}
+                    src={rehab}
                     alt="Rehab Perogy"
                   />
                   <p className="back-desktop">Rehab Finder</p>

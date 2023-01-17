@@ -6,10 +6,13 @@ import { Header } from "../../additional/Header";
 import analysis from "../../../assets/photos/services/ui/analysis.svg";
 import design from "../../../assets/photos/services/ui/design.svg";
 import deployment from "../../../assets/photos/services/ui/deployment.svg";
-import implementation from "../../../assets/photos/services/ui/analysis.svg";
+import implementation_new from "../../../assets/photos/services/ui/deployment-new.svg";
 import uiUX from "../../../assets/photos/services/ui/mobile-ui.svg";
 import web from "../../../assets/photos/services/ui/web.svg";
 import motion from "../../../assets/photos/services/ui/motion.svg";
+import phone_top from "../../../assets/photos/services/ui/phone-top.svg";
+import new_me from "../../../assets/photos/home/new-me.svg";
+import rehab from "../../../assets/photos/home/rehab.svg";
 import theme from "../../../assets/photos/services/ui/theme.svg";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -42,10 +45,7 @@ export const Design = () => {
             <h2>UI/UX Design</h2>
           </div>
           <div className="introducion__container-phone">
-            <img
-              src={require("../../../assets/photos/services/ui/phone-top.png")}
-              alt="phone"
-            />
+            <img src={phone_top} alt="phone" />
           </div>
           <div className="introducion__container-letter">
             <img
@@ -66,8 +66,7 @@ export const Design = () => {
         <AnimationOnScroll
           animateOnce={true}
           animateIn="animate__fadeInUp"
-          className="animated"
-        >
+          className="animated">
           <div className="build__desc">
             <h2 className="build__desc-title">
               Our goal is to develop the best design for you
@@ -103,8 +102,7 @@ export const Design = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="presentation">
           <h2 className="presentation__title">
             Design for Mobile and Web production
@@ -164,8 +162,7 @@ export const Design = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInUp"
-            className="animated"
-          >
+            className="animated">
             <div className="process__container-row row">
               <div className="row__box">
                 <div className="row__box-icon">
@@ -198,8 +195,7 @@ export const Design = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInUp"
-            className="animated"
-          >
+            className="animated">
             <div className="process__container-central central">
               <div className="central__icon">
                 <img className="central__icon-image" src={theme} alt="icon" />
@@ -209,8 +205,7 @@ export const Design = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInUp"
-            className="animated"
-          >
+            className="animated">
             <div className="process__container-row row">
               <div className="row__box">
                 <div className="row__box-icon">
@@ -227,7 +222,7 @@ export const Design = () => {
               </div>
               <div className="row__box">
                 <div className="row__box-icon">
-                  <img src={implementation} alt="implementation" />
+                  <img src={implementation_new} alt="implementation" />
                 </div>
                 <div className="row__box-text text">
                   <p className="text__one">Phase IV: </p>
@@ -251,8 +246,7 @@ export const Design = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -266,16 +260,13 @@ export const Design = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">
                   <img
                     className="back-desktop"
-                    src={require("../../../assets/photos/examples/rehab.png")}
+                    src={rehab}
                     alt="Rehab Perogy"
                   />
                   <p className="back-desktop">Rehab Finder</p>

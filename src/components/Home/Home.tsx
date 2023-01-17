@@ -9,6 +9,9 @@ import uiUx from "../../assets/photos/home/uiUx.svg";
 import conversation from "../../assets/photos/home/conversation.svg";
 import mobile from "../../assets/photos/home/mobile-dev.svg";
 import web from "../../assets/photos/home/web-dev.svg";
+import main_gen from "../../assets/photos/home/main-gen.svg";
+import new_me from "../../assets/photos/home/new-me.svg";
+import holy_perogy from "../../assets/photos/home/holy-perogy.svg";
 import "./Home.scss";
 import { HomeCarousel } from "../additional/HomeCarousel";
 import { HomeCarouselMobile } from "../additional/HomeCarouselMobile";
@@ -49,8 +52,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="home__benefits benefits">
           <h2 className="benefits__title">Our benefits</h2>
           <p className="benefits__description">
@@ -100,8 +102,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="home__help help">
           <h2 className="help__title">We are here to help you with</h2>
           <p className="help__desc">
@@ -112,8 +113,7 @@ export const Home = () => {
           <div className="help__items items">
             <Link
               to="/services/ui-ux-design/"
-              className="help__items-example example"
-            >
+              className="help__items-example example">
               <span className="example__box">
                 <img
                   className="example__box-picture"
@@ -125,8 +125,7 @@ export const Home = () => {
             </Link>
             <Link
               to="/services/dedicated-team-services/"
-              className="help__items-example example"
-            >
+              className="help__items-example example">
               <span className="example__box">
                 <img
                   className="example__box-picture"
@@ -138,8 +137,7 @@ export const Home = () => {
             </Link>
             <Link
               to="/services/mobile-development/"
-              className="help__items-example example"
-            >
+              className="help__items-example example">
               <span className="example__box">
                 <img
                   className="example__box-picture"
@@ -151,8 +149,7 @@ export const Home = () => {
             </Link>
             <Link
               to="/services/web-development/"
-              className="help__items-example example"
-            >
+              className="help__items-example example">
               <span className="example__box">
                 <img
                   className="example__box-picture"
@@ -168,8 +165,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -183,17 +179,11 @@ export const Home = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">
-                  <img
-                    src={require("../../assets/photos/examples/holy.png")}
-                    alt="Holy Perogy"
-                  />
+                  <img src={holy_perogy} alt="Holy Perogy" />
                   <p>Holy Perogy</p>
                 </Link>
               </div>
@@ -216,8 +206,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="home__carousel-desktop">
           <HomeCarousel />
         </section>
@@ -225,8 +214,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="home__carousel-mobile">
           <HomeCarouselMobile />
         </section>
@@ -234,8 +222,7 @@ export const Home = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="home__testimonials testimonials">
           <div className="testimonials__container">
             <div className="testimonials__container-exps expos">
@@ -253,8 +240,7 @@ export const Home = () => {
                 src="https://widget.clutch.co/widgets/get/4?ref_domain=got-it.agency&amp;uid=979763&amp;ref_path=/"
                 height="600px"
                 scrolling="no"
-                title="[iFrameSizer]iframe-0.8731522158075802:0:0:mouseleave:305:8844"
-              ></iframe>
+                title="[iFrameSizer]iframe-0.8731522158075802:0:0:mouseleave:305:8844"></iframe>
             </div>
           </div>
         </section>

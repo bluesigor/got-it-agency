@@ -23,6 +23,7 @@ import { Ivala } from "./components/Ivala";
 import { RehabFinder } from "./components/RehabFinder";
 import "./styles/App.scss";
 import { NewMe } from "./components/NewMe";
+import CanadianCenter from "./components/CanadianCenter/CanadianCenter";
 
 export const App = () => {
   return (
@@ -45,8 +46,7 @@ export const App = () => {
           <Route path="/dedicated-team-services/" element={<Dedicated />} />
           <Route
             path="/got-it-agency-has-paved-its-way-to-thrive-by-offering-great-business-solutions-goodfirms/"
-            element={<GoodFirms />}
-          ></Route>
+            element={<GoodFirms />}></Route>
           <Route
             path="/the-launch-of-our-new-website-blog/"
             element={<NewWebsite />}
@@ -67,6 +67,10 @@ export const App = () => {
           <Route path="/portfolio/ivala-learn/" element={<Ivala />} />
           <Route path="/portfolio/rehab-finder/" element={<RehabFinder />} />
           <Route path="/portfolio/clinics/" element={<NewMe />} />
+          <Route
+            path="/portfolio/canadian-center/"
+            element={<CanadianCenter />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </ScrollTop>
