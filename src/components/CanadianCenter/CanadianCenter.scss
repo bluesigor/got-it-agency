@@ -122,9 +122,11 @@
             right: 10px;
             top: -10%;
             position: absolute;
+            @include onMobile {
+                max-width: 300px;
+            }
             @include onTablet {
                 margin-top: 100px;
-                // right: -75px;
                 position: relative;
             }
             @media (min-width: 1024px) {
@@ -140,8 +142,10 @@
         &-values {
             position: absolute;
             top: 15%;
+            @include onMobile {
+                max-width: 300px;
+            }
             @include onTablet {
-                // right: -75px;
                 position: relative;
                 margin-top: -120px;
             }
@@ -554,6 +558,9 @@
             flex-direction: column;
             gap: 1px;
             &-helvetica {
+                @media (min-width: 1024px) {
+                    margin-left: -50px;
+                }
                 &__uppercase {
                     font-family: 'Helvetica Neue';
                     font-style: normal;
@@ -721,17 +728,45 @@
     background-attachment: fixed;
     position: relative;
     z-index: 0;
+    @include onMobile {
+        max-height: 120vh;
+    }
     &__treatment-main {
         position: absolute;
         top: 210px;
         right: 148px;
         z-index: 1;
+        @include onMobile {
+            max-width: 260px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 500px;
+            top: 148px;
+            right: 20px;
+        }
+        @media (min-width: 1280px) {
+            right: 123px;
+            max-width: 100%;
+        }
     }
     &__treatment-bckg {
         position: absolute;
         top: 226px;
         right: 170px;
         z-index: 0;
+        @include onMobile {
+            max-width: 260px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 483px;
+            top: 164px;
+            right: 28px;
+            z-index: 1;
+        }
+        @media (min-width: 1280px) {
+            right: 145px;
+            max-width: 100%;
+        }
     }
     &__life-bckg {
         position: absolute;
@@ -739,15 +774,18 @@
         left: 180px;
         @media (min-width: 1024px) {
             left: 130px;
+            max-width: 480px;
         }
-        @media (min-width: 1184px) {
+        @media (min-width: 1284px) {
             left: 180px;
+            max-width: 100%;
         }
         @include onTablet {
             left: 10%;
         }
         @include onMobile {
             position: static;
+            max-width: 260px;
         }
     }
     &__toronto {
@@ -757,6 +795,7 @@
             z-index: 0;
             @include onMobile {
                 position: static;
+                max-width: 260px;
             }
         }
         &-main {
@@ -765,6 +804,7 @@
             z-index: 3;
             @include onMobile {
                 position: static;
+                max-width: 260px;
             }
         }
     }
@@ -822,7 +862,7 @@
             left: 370px;
         }
         @media (min-width: 1180px) {
-            left: 550px;
+            left: 510px;
         }
         @media (min-width: 1380px) {
             left: 630px;
@@ -879,6 +919,10 @@
         @media (min-width: 1440px) {
             padding-left: 390px;
         }
+        @media (min-width: 1024px) {
+            padding-left: 130px;
+            padding-top: 190px;
+        }
         &__title {
             font-family: 'Butler';
             font-style: normal;
@@ -907,14 +951,14 @@
     &-life {
         padding-top: 1385px;
         padding-left: 913px;
-        @media (min-width: 1440px) {
-            padding-left: 1000px;
+        @media (min-width: 1024px) {
+            padding-left: 645px;
         }
-        @media (min-width: 1184px) {
+        @media (min-width: 1284px) {
             padding-left: 870px;
         }
-        @media (min-width: 1024px) {
-            padding-left: 860px;
+        @media (min-width: 1440px) {
+            padding-left: 1000px;
         }
         @include onTablet {
             padding-top: 985px;
@@ -957,6 +1001,9 @@
         @media (min-width: 1440px) {
             padding-left: 240px;
         }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
+        }
         &__title {
             font-family: 'Butler';
             font-style: normal;
@@ -976,10 +1023,15 @@
             font-family: 'Helvetica Neue';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
             line-height: 150%;
             color: $treatment-subtitle;
             max-width: 366px;
+            @media (min-width: 1024px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1224px) {
+                font-size: 16px;
+            }
         }
     }
     &__help {
@@ -987,7 +1039,12 @@
         top: 241px;
         right: 110px;
         @media (min-width: 1440px) {
+            max-width: 100%;
             right: 220px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 500px;
+            right: 55px;
         }
         @include onMobile {
             position: relative;
@@ -998,8 +1055,12 @@
         top: 606px;
         left: 151px;
         z-index: -1;
+        max-width: 100%;
         @media (min-width: 1440px) {
             left: 200px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 600px;
         }
         @include onTablet {
             left: 30px;
@@ -1113,5 +1174,16 @@
             transition: transform 0.5s;
             transform: scale(1.1);
         }
+    }
+}
+
+.unskool,
+.catering,
+.reno {
+    @media (min-width: 1024px) {
+        display: none;
+    }
+    @media (min-width: 1254px) {
+        display: block;
     }
 }
