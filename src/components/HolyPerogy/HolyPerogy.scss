@@ -1,0 +1,533 @@
+@import '../../styles/blocks/mixins.scss';
+@import '../../styles/blocks/holy-perogy-vars.scss';
+.perogy {
+    &-welcome {
+        position: relative;
+        display: flex;
+        min-height: 100vh;
+        @include onMobile {
+            min-height: 50vh;
+        }
+        &-first {
+            flex: 1;
+            background-color: $welcome-first;
+            background-image: url('../../assets/photos/holy-perogy/design.svg');
+            background-repeat: no-repeat;
+            @include onMobile {
+                background-image: none;
+            }
+            &__title {
+                padding-top: 69px;
+                padding-left: 74px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 23px;
+                line-height: 28px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: $welcome-title;
+                @include onMobile {
+                    padding-top: 0px;
+                    padding-left: 0px;
+                    position: absolute;
+                    z-index: 1;
+                    font-size: 24px;
+                    top: 10%;
+                    left: 20%;
+                    margin-right: auto;
+                    line-height: 29px;
+                }
+            }
+        }
+        &-second {
+            flex: 1;
+            background-color: $welcome-second;
+            background-image: url('../../assets/photos/holy-perogy/welcome-second.svg');
+            background-repeat: no-repeat;
+        }
+        &-third {
+            background-image: url('../../assets/photos/holy-perogy/welcome-third.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex: 1;
+            text-align: -webkit-right;
+            @media (min-width: 1024px) {
+                padding-top: 55px;
+            }
+            @include onMobile {
+                padding-top: 0px;
+            }
+            &__year {
+                padding-right: 10px;
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 23px;
+                line-height: 28px;
+                letter-spacing: 0.04em;
+                text-transform: capitalize;
+                transform: rotate(-90deg);
+                color: $year-txt;
+                max-width: 70px;
+                @include onMobile {
+                    position: absolute;
+                    top: 10%;
+                    left: 40%;
+                    transform: rotate(0deg);
+                    text-align: center;
+                    color: $welcome-title;
+                }
+            }
+        }
+    }
+    &-palette {
+        min-height: 100vh;
+        position: relative;
+        background-image: url('../../assets/photos/holy-perogy/palette.svg');
+        background-repeat: no-repeat;
+        background-size: 35%;
+        background-position: 38% 73%;
+        @include onTablet {
+            background-position: 32% 36%;
+        }
+        @include onMobile {
+            min-height: 70vh;
+            background-size: 55%;
+            background-position: 28% 25%;
+        }
+    }
+}
+
+.palette {
+    &__display {
+        @media (min-width: 1024px) {
+            max-width: 100%;
+            top: calc(-100% + 300px);
+        }
+        @include onTablet {
+            max-width: calc(100% - 100px);
+            top: calc(-100% + 300px);
+        }
+        @include onMobile {
+            max-width: calc(100% - 100px);
+            top: calc(-100% + 70%);
+        }
+        position: absolute;
+        top: -796px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__inner {
+        @media (min-width: 1280px) {
+            max-width: 100%;
+        }
+        @media (min-width: 1024px) {
+            top: calc(-100% + 460px);
+            max-width: 85%;
+        }
+        @include onTablet {
+            max-width: calc(100% - 242px);
+            top: calc(-100% + 54%);
+        }
+        @include onMobile {
+            max-width: calc(100% - 145px);
+            top: calc(-100% + 76.5%);
+        }
+        position: absolute;
+        top: -623px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__color-logo {
+        position: absolute;
+        top: 663px;
+        max-width: 400px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        @include onTablet {
+            top: 363px;
+            max-width: 600px;
+        }
+        @include onMobile {
+            top: 163px;
+            max-width: 100%;
+        }
+    }
+    &__green-entity {
+        position: absolute;
+    }
+}
+
+.fonts-example {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../../assets/photos/holy-perogy/section-fonts.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include onMobile {
+        min-height: 50vh;
+    }
+}
+
+.mobile-design {
+    min-height: 100vh;
+    padding-left: 189px;
+    background-image: url('../../assets/photos/holy-perogy/mobile-design.svg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 85%;
+    position: relative;
+    @include onMobile {
+        min-height: 40vh;
+        padding-left: 20px;
+    }
+    &-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include onTablet {
+            gap: 0px;
+            align-items: baseline;
+        }
+        @include onMobile {
+            gap: 0px;
+            align-items: baseline;
+        }
+        &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            color: $horizontal-line;
+            @include onMobile {
+                font-size: 27px;
+                line-height: 33px;
+            }
+        }
+        &__horizontal {
+            border-bottom: 1px solid $horizontal-line;
+            width: 76px;
+        }
+    }
+    &-bottom__logo {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+        @include onTablet {
+            max-width: 600px;
+            right: 0px;
+            bottom: calc(100% - 650px);
+        }
+        @include onMobile {
+            max-width: 300px;
+            bottom: 70px;
+            display: none;
+        }
+        &-small {
+            display: none;
+            @include onTablet {
+                position: absolute;
+                bottom: 0px;
+                z-index: -1;
+                right: 0px;
+                display: none;
+            }
+            @include onMobile {
+                display: block;
+                position: absolute;
+                bottom: 50px;
+                z-index: -1;
+                right: 0px;
+            }
+        }
+    }
+}
+
+.desktop-design {
+    min-height: 160vh;
+    position: relative;
+    @include onTablet {
+        min-height: 100vh;
+    }
+    @include onMobile {
+        min-height: 50vh;
+    }
+    &-header {
+        padding-left: 189px;
+        padding-top: 300px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include onTablet {
+            padding-top: 170px;
+        }
+        @include onMobile {
+            top: 100px;
+            padding-left: 20px;
+            padding-top: 50px;
+        }
+        &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 49px;
+            color: $horizontal-line;
+            @include onMobile {
+                font-size: 27px;
+            }
+        }
+        &__horizontal {
+            border-bottom: 1px solid $horizontal-line;
+            width: 76px;
+        }
+    }
+    &__website-logo {
+        margin-left: 20%;
+        margin-bottom: -780px;
+        @media (min-width: 1024px) {
+            margin-bottom: -635px;
+            max-width: 900px;
+            margin-left: 10%;
+        }
+        @media (min-width: 1284px) {
+            margin-bottom: -635px;
+            min-width: 1100px;
+            margin-left: 15%;
+        }
+        @media (min-width: 1340px) {
+            margin-bottom: -670px;
+            min-width: 1050px;
+            margin-left: 20%;
+        }
+        @media (min-width: 1640px) {
+            margin-bottom: -800px;
+            min-width: 1400px;
+            margin-left: 20%;
+        }
+        @include onTablet {
+            max-width: 620px;
+            margin-bottom: -390px;
+        }
+        @include onMobile {
+            max-width: 240px;
+            margin-bottom: -175px;
+        }
+    }
+    &__mobile-menu {
+        position: absolute;
+        display: none;
+        @include onMobile {
+            display: block;
+            left: 100px;
+            bottom: 0px;
+        }
+    }
+    &__cereals {
+        position: absolute;
+        left: 0px;
+        @media (min-width: 1024px) {
+            display: none;
+        }
+        @media (min-width: 1154px) {
+            display: inline;
+        }
+        @include onTablet {
+            display: none;
+        }
+        @include onMobile {
+            display: none;
+        }
+    }
+    &__tablet-perogy {
+        position: absolute;
+        top: 30%;
+        @media (min-width: 1024px) {
+            right: 300px;
+            max-width: 700px;
+        }
+        @media (min-width: 1384px) {
+            right: 470px;
+            min-width: 825px;
+        }
+        @include onTablet {
+            max-width: 450px;
+            left: calc(100% - 95%);
+        }
+        @include onMobile {
+            max-width: 200px;
+        }
+    }
+    &__tablet-end {
+        position: absolute;
+        right: 0;
+        top: 30%;
+        @media (min-width: 1024px) {
+            max-width: 750px;
+            max-height: 47vh;
+        }
+        @media (min-width: 1384px) {
+            max-height: 54vh;
+        }
+        @include onTablet {
+            max-width: 450px;
+            max-height: 30vh;
+        }
+        @include onMobile {
+            max-width: 200px;
+            max-height: 120px;
+        }
+    }
+    &__tablet-bottom {
+        &-start {
+            display: none;
+            @include onMobile {
+                display: block;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+        }
+        &-desk {
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            @media (min-width: 1024px) {
+                max-width: 337px;
+                left: -100px;
+            }
+            @media (min-width: 1384px) {
+                min-width: 357px;
+                left: 0px;
+            }
+            @include onTablet {
+                max-width: 215px;
+            }
+            @include onMobile {
+                display: none;
+            }
+        }
+        &-menu {
+            position: absolute;
+            bottom: 0px;
+            @media (min-width: 1024px) {
+                max-width: 720px;
+                right: 30px;
+            }
+            @media (min-width: 1384px) {
+                right: 180px;
+                min-width: 750px;
+            }
+            @include onTablet {
+                right: 30px;
+                max-width: 456px;
+            }
+            @include onMobile {
+                display: none;
+            }
+        }
+    }
+}
+
+.banner-footer {
+    min-height: 320vh;
+    position: relative;
+    &__footer-mobile {
+        position: absolute;
+        display: none;
+        @include onMobile {
+            display: block;
+        }
+    }
+    &__footer-desk {
+        top: 100px;
+        position: absolute;
+        @include onTablet {
+            max-width: 550px;
+            left: 12%;
+        }
+        @media (min-width: 800px) {
+            max-width: 850px;
+        }
+        @media (min-width: 1024px) {
+            min-width: 1000px;
+        }
+        @media (min-width: 1284px) {
+            min-width: 1100px;
+        }
+        @media (min-width: 1440px) {
+            left: 5%;
+            max-width: 1600px;
+        }
+        @media (min-width: 1540px) {
+            left: 15%;
+        }
+        @include onMobile {
+            display: none;
+        }
+    }
+}
+
+.projects-footer {
+    min-height: 50vh;
+    padding-top: 145px;
+    padding-bottom: 132px;
+    @media (min-width: 1024px) {
+        padding-left: 96px;
+    }
+    @media (min-width: 1184px) {
+        padding-left: 186px;
+        padding-right: 187px;
+    }
+    &__title {
+        font-family: 'Butler';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        color: $projects-title;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: 47px;
+        justify-content: space-between;
+        @include onTablet {
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        @include onMobile {
+            flex-wrap: wrap;
+        }
+        @media (min-width: 1024px) {
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        @media (min-width: 1384px) {
+            flex-wrap: nowrap;
+        }
+        &-logo {
+            @media (min-width: 1024px) {
+                min-width: 190px;
+            }
+            @media (min-width: 1184px) {
+                min-width: 210px;
+            }
+        }
+        &-logo:hover {
+            transition: transform 0.5s;
+            transform: scale(1.1);
+        }
+    }
+}
