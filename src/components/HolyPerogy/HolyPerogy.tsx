@@ -1,16 +1,13 @@
 import "./HolyPerogy.scss";
+import { Link } from "react-router-dom";
 
 import display from "../../assets/photos/holy-perogy/display.svg";
 import screen_inner from "../../assets/photos/holy-perogy/screen-inner.svg";
 import color from "../../assets/photos/holy-perogy/color.svg";
-import red_entity from "../../assets/photos/holy-perogy/red-entity.svg";
-import green_entity from "../../assets/photos/holy-perogy/green-entity.svg";
-import brown_entity from "../../assets/photos/holy-perogy/brown-entity.svg";
-import blue_entity from "../../assets/photos/holy-perogy/blue-entity.svg";
-import yellow_entity from "../../assets/photos/holy-perogy/yellow-entity.svg";
 import mobile_logo from "../../assets/photos/holy-perogy/mobile-logo.svg";
 import mobile_logo_small from "../../assets/photos/holy-perogy/mobile-logo-small.svg";
 import cereals from "../../assets/photos/holy-perogy/cereals.svg";
+import mint from "../../assets/photos/holy-perogy/mint.svg";
 import tablet_perogy from "../../assets/photos/holy-perogy/tablet-perogy.svg";
 import tablet_end from "../../assets/photos/holy-perogy/tablet-end.svg";
 import bottom_tablet from "../../assets/photos/holy-perogy/bottom-tablet.svg";
@@ -20,12 +17,13 @@ import website_logo from "../../assets/photos/holy-perogy/website-logo.svg";
 import mobile_menu from "../../assets/photos/holy-perogy/mobile-menu.svg";
 import footer_mobile from "../../assets/photos/holy-perogy/footer-mobile.svg";
 import footer_desk from "../../assets/photos/holy-perogy/banner-footer-desktop.svg";
+import home_logo from "../../assets/photos/holy-perogy/home-logo.svg";
+import design_logo from "../../assets/photos/holy-perogy/design-logo.svg";
 import newme from "../../assets/photos/canadian-center/newme.svg";
 import miia from "../../assets/photos/canadian-center/miia.svg";
 import reno from "../../assets/photos/canadian-center/reno.svg";
 import catering from "../../assets/photos/canadian-center/catering.svg";
 
-import { Link } from "react-router-dom";
 const HolyPerogy = () => {
   return (
     <div className="perogy">
@@ -41,33 +39,11 @@ const HolyPerogy = () => {
       <section className="perogy-palette palette">
         <img src={display} alt="display" className="palette__display" />
         <img src={screen_inner} alt="screen_inner" className="palette__inner" />
-        <img src={color} alt="color" className="palette__color-logo" />
-
-        {/* <img
-          src={green_entity}
-          alt="green_entity"
-          className="palette__green-entity"
-        />
         <img
-          src={yellow_entity}
-          alt="yellow_entity"
-          className="palette__yellow-entity"
+          src={require("../../assets/photos/holy-perogy/palette-logo.png")}
+          alt="pallete-logo"
+          className="palette__main-palette-logo"
         />
-        <img
-          src={red_entity}
-          alt="red_entity"
-          className="palette__red-entity"
-        />
-        <img
-          src={brown_entity}
-          alt="brown_entity"
-          className="palette__brown-entity"
-        />
-        <img
-          src={blue_entity}
-          alt="blue_entity"
-          className="palette__blue-entity"
-        /> */}
       </section>
       <section className="perogy-fonts-example fonts-example"></section>
       <section className="perogy-mobile-design mobile-design">
@@ -75,6 +51,7 @@ const HolyPerogy = () => {
           <h4 className="mobile-design-header__title">Mobile</h4>
           <div className="mobile-design-header__horizontal"></div>
         </div>
+        <img src={mint} alt="mint" className="mobile-design__mint" />
         <div className="mobile-design-bottom">
           <img
             src={mobile_logo}
@@ -140,6 +117,16 @@ const HolyPerogy = () => {
           src={footer_desk}
           alt="footer_desk"
           className="banner-footer__footer-desk"
+        />
+        <img
+          src={home_logo}
+          alt="home_logo"
+          className="banner-footer__home-logo"
+        />
+        <img
+          src={design_logo}
+          alt="design_logo"
+          className="banner-footer__design-logo"
         />
       </section>
       <footer className="perogy-projects-footer projects-footer">
