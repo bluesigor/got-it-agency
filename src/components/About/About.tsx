@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { Banner } from "../additional/Banner";
 import { Footer } from "../additional/Footer";
 import { Header } from "../additional/Header";
+
+import about_main from "../../assets/photos/about/about-main.svg";
+import new_me from "../../assets/photos/home/new-me.svg";
+import rehab from "../../assets/photos/home/rehab.svg";
 import map from "../../assets/photos/about/map.svg";
 import line from "../../assets/photos/about/line.svg";
 import idea from "../../assets/photos/about/idea.svg";
@@ -46,19 +50,14 @@ export const About = () => {
           </div>
         </div>
         <div className="begin__bg begin-desktop">
-          <img
-            className="begin__bg-photo"
-            src={require("../../assets/photos/about/about-main.png")}
-            alt="about bg"
-          />
+          <img className="begin__bg-photo" src={about_main} alt="about bg" />
         </div>
       </section>
       <section className="build">
         <AnimationOnScroll
           animateOnce={true}
           animateIn="animate__fadeInUp"
-          className="animated"
-        >
+          className="animated">
           <div className="build__desc">
             <h2 className="build__desc-title">Our goal</h2>
             <div className="build__desc-content">
@@ -121,8 +120,7 @@ export const About = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="build">
           <div className="build__back wd">
             <img
@@ -148,8 +146,7 @@ export const About = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="flowbox">
           <div className="flowbox__container">
             <div className="flowbox__container-thing thing">
@@ -243,8 +240,7 @@ export const About = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -258,10 +254,7 @@ export const About = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">

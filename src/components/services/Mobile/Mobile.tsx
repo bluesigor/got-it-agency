@@ -3,12 +3,15 @@ import { Footer } from "../../additional/Footer";
 import { Header } from "../../additional/Header";
 import { Link } from "react-router-dom";
 import "./Mobile.scss";
+import main_mob from "../../../assets/photos/services/mobile/main-mob.svg";
 import ios from "../../../assets/photos/services/mobile/ios.svg";
 import android from "../../../assets/photos/services/mobile/android.svg";
 import swift from "../../../assets/photos/services/mobile/swift.svg";
 import native from "../../../assets/photos/services/mobile/native.svg";
 import kotlin from "../../../assets/photos/services/mobile/kotlin.svg";
 import flutter from "../../../assets/photos/services/mobile/flutter.svg";
+import new_me from "../../../assets/photos/home/new-me.svg";
+import rehab from "../../../assets/photos/home/rehab.svg";
 import { MobileSwitcher } from "../../additional/MobileSwitcher";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -41,10 +44,7 @@ export const Mobile = () => {
           <div className="gen__phone">
             <p className="gen__phone-mob">Mobile</p>
             <div className="gen__phone-image">
-              <img
-                src={require("../../../assets/photos/services/mobile/main-mob.png")}
-                alt="mobile phone"
-              />
+              <img src={main_mob} alt="mobile phone" />
             </div>
           </div>
         </div>
@@ -66,8 +66,7 @@ export const Mobile = () => {
         <AnimationOnScroll
           animateOnce={true}
           animateIn="animate__fadeInUp"
-          className="animated"
-        >
+          className="animated">
           <div className="build__desc">
             <h2 className="build__desc-title">
               Your Business is always close to you!
@@ -99,8 +98,7 @@ export const Mobile = () => {
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__fadeInUp"
-              className="animated"
-            >
+              className="animated">
               <div className="images__ios">
                 <img
                   src={require("../../../assets/photos/services/mobile/ios-phone.png")}
@@ -111,8 +109,7 @@ export const Mobile = () => {
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__fadeInUp"
-              className="animated"
-            >
+              className="animated">
               <div className="images__android">
                 <img
                   src={require("../../../assets/photos/services/mobile/android-phone.png")}
@@ -124,8 +121,7 @@ export const Mobile = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInUp"
-            className="animated"
-          >
+            className="animated">
             <div className="phones__container-pres pres">
               <div className="pres__item">
                 <h2 className="pres__item-title">iOS Development</h2>
@@ -167,8 +163,7 @@ export const Mobile = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeIn"
-            className="animated"
-          >
+            className="animated">
             <div className="info__text">
               <h2 className="info__text-title">Technologies we use</h2>
               <p className="info__text-desc">
@@ -180,8 +175,7 @@ export const Mobile = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInLeft"
-            className="animated"
-          >
+            className="animated">
             <div className="info__tech">
               <div className="info__tech-block block">
                 <div className="block__icon">
@@ -250,15 +244,13 @@ export const Mobile = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <MobileSwitcher />
       </AnimationOnScroll>
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -272,16 +264,13 @@ export const Mobile = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">
                   <img
                     className="back-desktop"
-                    src={require("../../../assets/photos/examples/rehab.png")}
+                    src={rehab}
                     alt="Rehab Perogy"
                   />
                   <p className="back-desktop">Rehab Finder</p>

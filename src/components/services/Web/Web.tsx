@@ -15,6 +15,9 @@ import requirementPhoto from "../../../assets/photos/services/web/requirement.sv
 import designPhoto from "../../../assets/photos/services/web/design.svg";
 import devPhoto from "../../../assets/photos/services/web/dev.svg";
 import launchPhoto from "../../../assets/photos/services/web/launch.svg";
+import laptop_new from "../../../assets/photos/services/web/laptop-new.svg";
+import new_me from "../../../assets/photos/home/new-me.svg";
+import rehab from "../../../assets/photos/home/rehab.svg";
 import { WebLifecycle } from "../../additional/WebLifecycle";
 import { useState } from "react";
 import classNames from "classnames";
@@ -62,10 +65,7 @@ export const Web = () => {
               Web <span>Development</span>
             </h2>
             <div className="topic__web-image">
-              <img
-                src={require("../../../assets/photos/services/web/laptop.png")}
-                alt="laptop"
-              />
+              <img src={laptop_new} alt="laptop" />
             </div>
           </div>
         </div>
@@ -92,13 +92,11 @@ export const Web = () => {
         <AnimationOnScroll
           animateOnce={true}
           animateIn="animate__fadeInUp"
-          className="animated"
-        >
+          className="animated">
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInUp"
-            className="animated"
-          >
+            className="animated">
             <div className="build__desc">
               <h2 className="build__desc-title">
                 We build websites <span>that sell</span>
@@ -132,8 +130,7 @@ export const Web = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="lifecycle">
           <h2 className="lifecycle__title">Our Web Development Lifecycle</h2>
           <WebLifecycle />
@@ -148,8 +145,7 @@ export const Web = () => {
                 onClick={() => {
                   clear();
                   requirements ? setRequirements(false) : setRequirements(true);
-                }}
-              >
+                }}>
                 <div className="forw__first">
                   <div className="forw__first-icon">
                     <img src={requirementPhoto} alt="requirement" />
@@ -158,8 +154,7 @@ export const Web = () => {
                     className={classNames({
                       "forw__first-text": true,
                       whiter: requirements,
-                    })}
-                  >
+                    })}>
                     Requirement discovery
                   </p>
                 </div>
@@ -191,8 +186,7 @@ export const Web = () => {
                 onClick={() => {
                   clear();
                   design ? setDesign(false) : setDesign(true);
-                }}
-              >
+                }}>
                 <div className="forw__first">
                   <div className="forw__first-icon">
                     <img src={designPhoto} alt="design" />
@@ -201,8 +195,7 @@ export const Web = () => {
                     className={classNames({
                       "forw__first-text": true,
                       whiter: design,
-                    })}
-                  >
+                    })}>
                     Design & Prototype creation
                   </p>
                 </div>
@@ -238,8 +231,7 @@ export const Web = () => {
                 onClick={() => {
                   clear();
                   dev ? setDev(false) : setDev(true);
-                }}
-              >
+                }}>
                 <div className="forw__first">
                   <div className="forw__first-icon">
                     <img src={devPhoto} alt="dev" />
@@ -248,8 +240,7 @@ export const Web = () => {
                     className={classNames({
                       "forw__first-text": true,
                       whiter: dev,
-                    })}
-                  >
+                    })}>
                     Development & Testing
                   </p>
                 </div>
@@ -285,8 +276,7 @@ export const Web = () => {
                 onClick={() => {
                   clear();
                   launch ? setLaunch(false) : setLaunch(true);
-                }}
-              >
+                }}>
                 <div className="forw__first">
                   <div className="forw__first-icon">
                     <img src={launchPhoto} alt="launch" />
@@ -295,8 +285,7 @@ export const Web = () => {
                     className={classNames({
                       "forw__first-text": true,
                       whiter: launch,
-                    })}
-                  >
+                    })}>
                     Launch & Measure
                   </p>
                 </div>
@@ -334,8 +323,7 @@ export const Web = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeIn"
-            className="animated"
-          >
+            className="animated">
             <div className="info__text">
               <h2 className="info__text-title">Technologies we use</h2>
               <p className="info__text-desc">
@@ -347,8 +335,7 @@ export const Web = () => {
           <AnimationOnScroll
             animateOnce={true}
             animateIn="animate__fadeInLeft"
-            className="animated"
-          >
+            className="animated">
             <div className="info__tech">
               <div className="info__tech-block block">
                 <div className="block__icon">
@@ -399,8 +386,7 @@ export const Web = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="why">
           <div className="why__container">
             <h2 className="why__container-title">Why Got IT?</h2>
@@ -492,8 +478,7 @@ export const Web = () => {
       <AnimationOnScroll
         animateOnce={true}
         animateIn="animate__fadeInUp"
-        className="animated"
-      >
+        className="animated">
         <section className="examples">
           <div className="examples__content">
             <div className="examples__content-texting texting">
@@ -507,16 +492,13 @@ export const Web = () => {
             <div className="examples__content-container">
               <div className="row__up">
                 <Link to="/portfolio/clinics/" className="row__up-small">
-                  <img
-                    src={require("../../../assets/photos/examples/clinics.png")}
-                    alt="NewMe Clinics"
-                  />
+                  <img src={new_me} alt="NewMe Clinics" />
                   <p>NewMe Clinics</p>
                 </Link>
                 <Link to="/portfolio/holy-perogy/" className="row__up-big">
                   <img
                     className="back-desktop"
-                    src={require("../../../assets/photos/examples/rehab.png")}
+                    src={rehab}
                     alt="Rehab Perogy"
                   />
                   <p className="back-desktop">Rehab Finder</p>

@@ -20,9 +20,12 @@ import { Web } from "./components/services/Web";
 import { ScrollTop } from "./components/additional/ScrollTop";
 import { Miia } from "./components/Miia";
 import { Ivala } from "./components/Ivala";
+import { CanadianCenter } from "./components/CanadianCenter";
 import { RehabFinder } from "./components/RehabFinder";
 import "./styles/App.scss";
 import { NewMe } from "./components/NewMe";
+import { Reno } from "./components/Reno";
+import HolyPerogy from "./components/HolyPerogy/HolyPerogy";
 
 export const App = () => {
   return (
@@ -45,8 +48,7 @@ export const App = () => {
           <Route path="/dedicated-team-services/" element={<Dedicated />} />
           <Route
             path="/got-it-agency-has-paved-its-way-to-thrive-by-offering-great-business-solutions-goodfirms/"
-            element={<GoodFirms />}
-          ></Route>
+            element={<GoodFirms />}></Route>
           <Route
             path="/the-launch-of-our-new-website-blog/"
             element={<NewWebsite />}
@@ -67,6 +69,15 @@ export const App = () => {
           <Route path="/portfolio/ivala-learn/" element={<Ivala />} />
           <Route path="/portfolio/rehab-finder/" element={<RehabFinder />} />
           <Route path="/portfolio/clinics/" element={<NewMe />} />
+          <Route path="/portfolio/holy-perogy/" element={<HolyPerogy />} />
+          <Route
+            path="/portfolio/canadian-center/"
+            element={<CanadianCenter />}
+          />
+          <Route
+            path="/portfolio/reno/"
+            element={<Reno />}
+          />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </ScrollTop>
