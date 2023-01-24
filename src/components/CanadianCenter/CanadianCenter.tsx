@@ -32,7 +32,7 @@ import reno from "../../assets/photos/canadian-center/reno.svg";
 import newme from "../../assets/photos/canadian-center/newme.svg";
 import miia from "../../assets/photos/canadian-center/miia.svg";
 
-const CanadianCenter = () => {
+export const CanadianCenter = () => {
   return (
     <div className="canadian-center">
       <main className="canadian-center-main-layout">
@@ -574,4 +574,3 @@ const CanadianCenter = () => {
   );
 };
 
-export default CanadianCenter;

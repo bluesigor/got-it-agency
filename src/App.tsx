@@ -20,10 +20,11 @@ import { Web } from "./components/services/Web";
 import { ScrollTop } from "./components/additional/ScrollTop";
 import { Miia } from "./components/Miia";
 import { Ivala } from "./components/Ivala";
+import { CanadianCenter } from "./components/CanadianCenter";
 import { RehabFinder } from "./components/RehabFinder";
 import "./styles/App.scss";
 import { NewMe } from "./components/NewMe";
-import CanadianCenter from "./components/CanadianCenter/CanadianCenter";
+import { Reno } from "./components/Reno";
 
 export const App = () => {
   return (
@@ -70,6 +71,10 @@ export const App = () => {
           <Route
             path="/portfolio/canadian-center/"
             element={<CanadianCenter />}
+          />
+          <Route
+            path="/portfolio/reno/"
+            element={<Reno />}
           />
           <Route path="*" element={<PageNotFound />} />
         </Routes>

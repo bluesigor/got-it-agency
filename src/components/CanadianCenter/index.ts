@@ -1,1 +1,1 @@
-export { default } from './CanadianCenter'
+export * from "./CanadianCenter";
