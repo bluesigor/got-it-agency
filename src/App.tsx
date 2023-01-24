@@ -25,6 +25,7 @@ import { RehabFinder } from "./components/RehabFinder";
 import "./styles/App.scss";
 import { NewMe } from "./components/NewMe";
 import { Reno } from "./components/Reno";
+import HolyPerogy from "./components/HolyPerogy/HolyPerogy";
 
 export const App = () => {
   return (
@@ -68,6 +69,7 @@ export const App = () => {
           <Route path="/portfolio/ivala-learn/" element={<Ivala />} />
           <Route path="/portfolio/rehab-finder/" element={<RehabFinder />} />
           <Route path="/portfolio/clinics/" element={<NewMe />} />
+          <Route path="/portfolio/holy-perogy/" element={<HolyPerogy />} />
           <Route
             path="/portfolio/canadian-center/"
             element={<CanadianCenter />}

@@ -44,6 +44,9 @@
     list-style: none;
     gap: 64px;
     position: relative;
+    @include onMobile {
+        display: none;
+    }
     &__item {
         font-family: 'Helvetica Neue';
         font-style: normal;
@@ -67,6 +70,18 @@
     justify-content: space-between;
     gap: 51px;
     position: relative;
+    @include onTablet {
+        padding: 110px 90px;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+    @include onMobile {
+        flex-direction: column;
+        padding-top: 50px;
+        max-height: 40vh;
+        padding: 50px 30px;
+    }
     @media (min-width: 1024px) {
         padding-left: 80px;
         padding-right: 130px;
@@ -74,15 +89,6 @@
     @media (min-width: 1440px) {
         padding-left: 190px;
         padding-right: 180px;
-    }
-    @include onMobile {
-        flex-direction: column;
-    }
-    @include onTablet {
-        padding: 110px 90px;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: space-evenly;
     }
     &-info-block {
         position: relative;
@@ -106,6 +112,9 @@
             @include onTablet {
                 font-size: 32px;
             }
+            @include onMobile {
+                font-size: 28px;
+            }
         }
         &-subtitle {
             font-family: 'Helvetica Neue';
@@ -114,6 +123,9 @@
             font-size: 16px;
             line-height: 140%;
             color: $treatment-subtitle;
+            @include onMobile {
+                font-size: 14px;
+            }
         }
     }
     &-logos-block {
@@ -122,9 +134,11 @@
             right: 10px;
             top: -10%;
             position: absolute;
+            @include onMobile {
+                max-width: 300px;
+            }
             @include onTablet {
                 margin-top: 100px;
-                // right: -75px;
                 position: relative;
             }
             @media (min-width: 1024px) {
@@ -140,8 +154,10 @@
         &-values {
             position: absolute;
             top: 15%;
+            @include onMobile {
+                max-width: 300px;
+            }
             @include onTablet {
-                // right: -75px;
                 position: relative;
                 margin-top: -120px;
             }
@@ -184,7 +200,7 @@
 }
 
 .mask_wrapper {
-    top: -237px;
+    top: -195px;
     left: 120px;
     position: absolute;
     z-index: -1;
@@ -219,6 +235,9 @@
         line-height: 120%;
         color: $wireframes-title;
         background-attachment: scroll, local;
+        @include onMobile {
+            font-size: 32px;
+        }
     }
 }
 
@@ -242,8 +261,8 @@
     }
     @include onMobile {
         padding-top: 82px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     &-header {
         display: flex;
@@ -366,6 +385,9 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
+                @include onMobile {
+                    gap: 10px;
+                }
                 &-box {
                     display: flex;
                     flex-direction: row;
@@ -517,6 +539,9 @@
     text-transform: uppercase;
     color: $wireframes-bckg;
     margin-bottom: 7px;
+    @include onMobile {
+        font-size: 7px;
+    }
 }
 
 .rgb-colours-list {
@@ -554,6 +579,9 @@
             flex-direction: column;
             gap: 1px;
             &-helvetica {
+                @media (min-width: 1024px) {
+                    margin-left: -50px;
+                }
                 &__uppercase {
                     font-family: 'Helvetica Neue';
                     font-style: normal;
@@ -564,6 +592,9 @@
                     text-transform: uppercase;
                     color: $alaphabet;
                     text-align: left;
+                    @include onMobile {
+                        font-size: 16px;
+                    }
                 }
                 &__lowercase {
                     font-family: 'Helvetica Neue';
@@ -574,6 +605,9 @@
                     letter-spacing: 0.07em;
                     color: $alaphabet;
                     text-align: left;
+                    @include onMobile {
+                        font-size: 16px;
+                    }
                 }
             }
             &__uppercase {
@@ -586,6 +620,9 @@
                 text-transform: uppercase;
                 color: $alaphabet;
                 text-align: left;
+                @include onMobile {
+                    font-size: 16px;
+                }
             }
             &__lowercase {
                 font-family: 'Butler';
@@ -596,6 +633,9 @@
                 letter-spacing: 0.07em;
                 color: $alaphabet;
                 text-align: left;
+                @include onMobile {
+                    font-size: 16px;
+                }
             }
         }
         &-butler {
@@ -721,17 +761,49 @@
     background-attachment: fixed;
     position: relative;
     z-index: 0;
+    @include onMobile {
+        max-height: 75vh;
+        min-height: 270vh;
+    }
     &__treatment-main {
         position: absolute;
         top: 210px;
         right: 148px;
         z-index: 1;
+        @include onMobile {
+            max-width: 260px;
+            top: 79%;
+            right: 80px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 500px;
+            top: 148px;
+            right: 20px;
+        }
+        @media (min-width: 1280px) {
+            right: 123px;
+            max-width: 100%;
+        }
     }
     &__treatment-bckg {
         position: absolute;
         top: 226px;
         right: 170px;
         z-index: 0;
+        @include onMobile {
+            max-width: 260px;
+            display: none;
+        }
+        @media (min-width: 1024px) {
+            max-width: 483px;
+            top: 164px;
+            right: 28px;
+            z-index: 1;
+        }
+        @media (min-width: 1280px) {
+            right: 145px;
+            max-width: 100%;
+        }
     }
     &__life-bckg {
         position: absolute;
@@ -739,15 +811,18 @@
         left: 180px;
         @media (min-width: 1024px) {
             left: 130px;
+            max-width: 480px;
         }
-        @media (min-width: 1184px) {
+        @media (min-width: 1284px) {
             left: 180px;
+            max-width: 100%;
         }
         @include onTablet {
             left: 10%;
         }
         @include onMobile {
             position: static;
+            max-width: 260px;
         }
     }
     &__toronto {
@@ -756,7 +831,7 @@
             top: 964px;
             z-index: 0;
             @include onMobile {
-                position: static;
+                display: none;
             }
         }
         &-main {
@@ -765,6 +840,7 @@
             z-index: 3;
             @include onMobile {
                 position: static;
+                max-width: 260px;
             }
         }
     }
@@ -780,6 +856,7 @@
             }
             @include onMobile {
                 position: static;
+                display: none;
             }
         }
         &-main {
@@ -792,6 +869,7 @@
             }
             @include onMobile {
                 position: static;
+                max-width: 200px;
             }
         }
     }
@@ -803,6 +881,7 @@
             z-index: 1;
             @include onMobile {
                 position: static;
+                display: none;
             }
         }
         &-main {
@@ -811,7 +890,8 @@
             right: 0px;
             z-index: 2;
             @include onMobile {
-                position: static;
+                right: 0px;
+                max-width: 200px;
             }
         }
     }
@@ -822,10 +902,14 @@
             left: 370px;
         }
         @media (min-width: 1180px) {
-            left: 550px;
+            left: 510px;
         }
         @media (min-width: 1380px) {
             left: 630px;
+        }
+        @include onMobile {
+            top: 75%;
+            max-width: 200px;
         }
     }
     &__amenities {
@@ -833,7 +917,8 @@
         top: 2710px;
         right: 0px;
         @include onMobile {
-            position: static;
+            top: 63%;
+            max-width: 200px;
         }
     }
     &__wrapper-first {
@@ -852,17 +937,21 @@
         @include onTablet {
             display: none;
         }
+        @include onMobile {
+            display: none;
+        }
     }
     &__recovery {
         position: absolute;
         top: 3179px;
         left: 78px;
-        @include onMobile {
-            max-width: 350px;
-            position: static;
-        }
         @include onTablet {
             max-width: 550px;
+        }
+        @include onMobile {
+            max-width: 200px;
+            top: 70%;
+            left: 10px;
         }
     }
     &__patients {
@@ -870,7 +959,8 @@
         top: 3379px;
         right: 110px;
         @include onMobile {
-            position: static;
+            max-width: 200px;
+            top: 72%;
         }
     }
     &-about {
@@ -879,6 +969,14 @@
         @media (min-width: 1440px) {
             padding-left: 390px;
         }
+        @media (min-width: 1024px) {
+            padding-left: 130px;
+            padding-top: 190px;
+        }
+        @include onMobile {
+            padding-left: 160px;
+            padding-top: 0px;
+        }
         &__title {
             font-family: 'Butler';
             font-style: normal;
@@ -887,6 +985,9 @@
             line-height: 120%;
             color: $box-tenth;
             margin-bottom: 5px;
+            @include onMobile {
+                font-size: 28px;
+            }
         }
         &-line-horizontal {
             border-bottom: 1px solid $vertical-side-line;
@@ -902,23 +1003,30 @@
             line-height: 150%;
             color: $treatment-subtitle;
             max-width: 366px;
+            @include onMobile {
+                font-size: 12px;
+            }
         }
     }
     &-life {
         padding-top: 1385px;
         padding-left: 913px;
-        @media (min-width: 1440px) {
-            padding-left: 1000px;
+        @media (min-width: 1024px) {
+            padding-left: 645px;
         }
-        @media (min-width: 1184px) {
+        @media (min-width: 1284px) {
             padding-left: 870px;
         }
-        @media (min-width: 1024px) {
-            padding-left: 860px;
+        @media (min-width: 1440px) {
+            padding-left: 1000px;
         }
         @include onTablet {
             padding-top: 985px;
             padding-left: 220px;
+        }
+        @include onMobile {
+            padding-left: 160px;
+            padding-top: 30px;
         }
         &__title {
             font-family: 'Butler';
@@ -928,6 +1036,9 @@
             line-height: 120%;
             color: $box-tenth;
             margin-bottom: 5px;
+            @include onMobile {
+                font-size: 28px;
+            }
         }
         &-line-horizontal {
             border-bottom: 1px solid $vertical-side-line;
@@ -943,6 +1054,9 @@
             line-height: 150%;
             color: $treatment-subtitle;
             max-width: 366px;
+            @include onMobile {
+                font-size: 12px;
+            }
         }
     }
 }
@@ -951,11 +1065,20 @@
     min-height: 150vh;
     position: relative;
     z-index: 0;
+    @include onMobile {
+        min-height: 70vh;
+    }
     &-about {
         padding-top: 348px;
         padding-left: 190px;
+        @include onMobile {
+            padding: 100px 30px;
+        }
         @media (min-width: 1440px) {
             padding-left: 240px;
+        }
+        @media (min-width: 1024px) {
+            padding-left: 120px;
         }
         &__title {
             font-family: 'Butler';
@@ -965,6 +1088,9 @@
             line-height: 120%;
             color: $treatment-title;
             margin-bottom: 5px;
+            @include onMobile {
+                font-size: 28px;
+            }
         }
         &-line-horizontal {
             border-bottom: 1px solid $vertical-side-line;
@@ -976,10 +1102,18 @@
             font-family: 'Helvetica Neue';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
             line-height: 150%;
             color: $treatment-subtitle;
             max-width: 366px;
+            @include onMobile {
+                font-size: 12px;
+            }
+            @media (min-width: 1024px) {
+                font-size: 14px;
+            }
+            @media (min-width: 1224px) {
+                font-size: 16px;
+            }
         }
     }
     &__help {
@@ -987,10 +1121,15 @@
         top: 241px;
         right: 110px;
         @media (min-width: 1440px) {
+            max-width: 100%;
             right: 220px;
         }
+        @media (min-width: 1024px) {
+            max-width: 500px;
+            right: 55px;
+        }
         @include onMobile {
-            position: relative;
+            max-width: 200px;
         }
     }
     &__search-wrapper {
@@ -998,14 +1137,19 @@
         top: 606px;
         left: 151px;
         z-index: -1;
+        max-width: 100%;
         @media (min-width: 1440px) {
             left: 200px;
+        }
+        @media (min-width: 1024px) {
+            max-width: 600px;
         }
         @include onTablet {
             left: 30px;
         }
         @include onMobile {
             position: static;
+            max-width: 200px;
         }
     }
     &__news-block {
@@ -1013,6 +1157,7 @@
             left: 90px;
         }
         @include onMobile {
+            max-width: 200px;
             position: static;
         }
         position: absolute;
@@ -1113,5 +1258,16 @@
             transition: transform 0.5s;
             transform: scale(1.1);
         }
+    }
+}
+
+.unskool,
+.catering,
+.reno {
+    @media (min-width: 1024px) {
+        display: none;
+    }
+    @media (min-width: 1254px) {
+        display: block;
     }
 }

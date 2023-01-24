@@ -31,6 +31,7 @@ import catering from "../../assets/photos/canadian-center/catering.svg";
 import reno from "../../assets/photos/canadian-center/reno.svg";
 import newme from "../../assets/photos/canadian-center/newme.svg";
 import miia from "../../assets/photos/canadian-center/miia.svg";
+import { Link } from "react-router-dom";
 
 export const CanadianCenter = () => {
   return (
@@ -550,23 +551,33 @@ export const CanadianCenter = () => {
         <h1 className="projects__title">Check out more projects</h1>
         <ul className="projects__list">
           <li>
-            <img className="projects__list-logo" src={miia} alt="miia" />
+            <Link to={"/portfolio/miia"}>
+              <img className="projects__list-logo" src={miia} alt="miia" />
+            </Link>
           </li>
           <li>
-            <img className="projects__list-logo" src={newme} alt="newme" />
+            <Link to={"/portfolio/clinics"}>
+              <img className="projects__list-logo" src={newme} alt="newme" />
+            </Link>
           </li>
           <li>
-            <img className="projects__list-logo" src={reno} alt="reno" />
+            <Link to={"/portfolio/reno"}>
+              <img className="projects__list-logo reno" src={reno} alt="reno" />
+            </Link>
           </li>
           <li>
             <img
-              className="projects__list-logo"
+              className="projects__list-logo catering"
               src={catering}
               alt="catering"
             />
           </li>
           <li>
-            <img className="projects__list-logo" src={unskool} alt="unskool" />
+            <img
+              className="projects__list-logo unskool"
+              src={unskool}
+              alt="unskool"
+            />
           </li>
         </ul>
       </section>
