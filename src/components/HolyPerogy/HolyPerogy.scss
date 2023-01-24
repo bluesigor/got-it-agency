@@ -88,7 +88,7 @@
             min-height: 108vh;
         }
         @include onMobile {
-            min-height: 80vh;
+            min-height: 60vh;
         }
     }
 }
@@ -144,7 +144,7 @@
         }
         @include onMobile {
             max-width: calc(100% - 137px);
-            top: calc(-100% + 76.5%);
+            top: calc(-100% + 78%);
         }
         position: absolute;
         top: -623px;
@@ -356,7 +356,7 @@
             display: block;
             left: 100px;
             bottom: 0px;
-            max-width: calc(100% - 100px);
+            max-width: calc(100% - 145px);
         }
     }
     &__cereals {
@@ -422,7 +422,7 @@
                 position: absolute;
                 left: 0px;
                 bottom: 0px;
-                max-width: calc(100% - 100px);
+                max-width: calc(100% - 315px);
             }
         }
         &-desk {
@@ -472,11 +472,14 @@
     @media (min-width: 1540px) {
         min-height: 380vh;
     }
+    // @media (min-width: 385px) {
+    //     min-height: 110vh;
+    // }
     @include onTablet {
         min-height: 170vh;
     }
     @include onMobile {
-        min-height: 100vh;
+        min-height: 110vh;
     }
     &__footer-mobile {
         position: absolute;
@@ -568,6 +571,9 @@
         padding-left: 186px;
         padding-right: 187px;
     }
+    @include onMobile {
+        display: none;
+    }
     &__title {
         font-family: 'Butler';
         font-style: normal;
@@ -609,5 +615,34 @@
             transition: transform 0.5s;
             transform: scale(1.1);
         }
+    }
+}
+
+.next-project {
+    display: none;
+    @include onMobile {
+        display: block;
+    }
+    &-content-block {
+        padding: 30px;
+        &__title {
+            font-family: 'Catamaran';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 150%;
+            color: $projects-title;
+        }
+        &__subtitle {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 163%;
+            color: $next-projects-subtitle-txt;
+        }
+    }
+    &__logo {
+        width: 100%;
     }
 }

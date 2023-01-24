@@ -23,7 +23,8 @@ import newme from "../../assets/photos/canadian-center/newme.svg";
 import miia from "../../assets/photos/canadian-center/miia.svg";
 import reno from "../../assets/photos/canadian-center/reno.svg";
 import catering from "../../assets/photos/canadian-center/catering.svg";
-
+import menu_mobile from "../../assets/photos/holy-perogy/menu-mobile.svg";
+import next_proj from "../../assets/photos/holy-perogy/next-proj.svg";
 const HolyPerogy = () => {
   return (
     <div className="perogy">
@@ -102,7 +103,7 @@ const HolyPerogy = () => {
           className="desktop-design__tablet-bottom-menu"
         />
         <img
-          src={mobile_menu}
+          src={require("../../assets/photos/holy-perogy/menu-mobile.png")}
           alt="mobile_menu"
           className="desktop-design__mobile-menu"
         />
@@ -170,6 +171,13 @@ const HolyPerogy = () => {
           </li>
         </ul>
       </footer>
+      <section className="perogy__next-project next-project">
+        <div className="next-project-content-block">
+          <h1 className="next-project-content-block__title">Time to eat</h1>
+          <h4 className="next-project-content-block__subtitle">Next project</h4>
+        </div>
+        <img src={next_proj} alt="next_proj" className="next-project__logo" />
+      </section>
     </div>
   );
 };
