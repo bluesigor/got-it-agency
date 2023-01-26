@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import display from "../../assets/photos/holy-perogy/display.svg";
 import screen_inner from "../../assets/photos/holy-perogy/screen-inner.svg";
-import color from "../../assets/photos/holy-perogy/color.svg";
 import mobile_logo from "../../assets/photos/holy-perogy/mobile-logo.svg";
 import mobile_logo_small from "../../assets/photos/holy-perogy/mobile-logo-small.svg";
 import cereals from "../../assets/photos/holy-perogy/cereals.svg";
@@ -14,7 +13,6 @@ import bottom_tablet from "../../assets/photos/holy-perogy/bottom-tablet.svg";
 import bottom_tablet_desk from "../../assets/photos/holy-perogy/bottom-tablet-desk.svg";
 import menu from "../../assets/photos/holy-perogy/menu-tablet.svg";
 import website_logo from "../../assets/photos/holy-perogy/website-logo.svg";
-import mobile_menu from "../../assets/photos/holy-perogy/mobile-menu.svg";
 import footer_mobile from "../../assets/photos/holy-perogy/footer-mobile.svg";
 import footer_desk from "../../assets/photos/holy-perogy/banner-footer-desktop.svg";
 import home_logo from "../../assets/photos/holy-perogy/home-logo.svg";
@@ -23,8 +21,8 @@ import newme from "../../assets/photos/canadian-center/newme.svg";
 import miia from "../../assets/photos/canadian-center/miia.svg";
 import reno from "../../assets/photos/canadian-center/reno.svg";
 import catering from "../../assets/photos/canadian-center/catering.svg";
-import menu_mobile from "../../assets/photos/holy-perogy/menu-mobile.svg";
 import next_proj from "../../assets/photos/holy-perogy/next-proj.svg";
+
 const HolyPerogy = () => {
   return (
     <div className="perogy">

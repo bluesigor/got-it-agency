@@ -1,5 +1,17 @@
 import "./Miia.scss";
 
+import laptop_logo from "../../assets/photos/miia/laptop-logo-cropped-new.svg";
+import first from "../../assets/photos/miia/first.svg";
+import second from "../../assets/photos/miia/second.svg";
+import third from "../../assets/photos/miia/third.svg";
+import fourth from "../../assets/photos/miia/fourth.svg";
+import fifth from "../../assets/photos/miia/fifth.svg";
+import sixth from "../../assets/photos/miia/sixth.svg";
+import laptop_mob from "../../assets/photos/miia/laptop-with-phone.svg";
+import mob_leaves from "../../assets/photos/miia/mob-leavs.svg";
+
+import next_proj from "../../assets/photos/holy-perogy/next-proj.svg";
+
 export const Miia = () => {
   return (
     <div className="miia">
@@ -20,9 +32,11 @@ export const Miia = () => {
               store with natural cosmetics. Our task was to create a compering
               website that will be convenient and modern to use.
             </p>
-          </div>
-          <div className="challenge__image">
-            <img alt="laptop" />
+            <img
+              src={laptop_logo}
+              alt="laptop_logo"
+              className="challenge__laptop-img"
+            />
           </div>
         </section>
         <section className="miia__gen-mobi mobi">
@@ -44,47 +58,29 @@ export const Miia = () => {
             <div className="mobi__container-iphones iphones">
               <div className="iphones__content">
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/first.png")}
-                    alt="phone"
-                  />
+                  <img src={first} alt="phone" />
                 </div>
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/second.png")}
-                    alt="phone"
-                  />
+                  <img src={second} alt="phone" />
                 </div>
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/third.png")}
-                    alt="phone"
-                  />
+                  <img src={third} alt="phone" />
                 </div>
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/fourth.png")}
-                    alt="phone"
-                  />
+                  <img src={fourth} alt="phone" />
                 </div>
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/fifth.png")}
-                    alt="phone"
-                  />
+                  <img src={fifth} alt="phone" />
                 </div>
                 <div className="iphones__content-box">
-                  <img
-                    src={require("../../assets/photos/miia/sixth.png")}
-                    alt="phone"
-                  />
+                  <img src={sixth} alt="phone" />
                 </div>
               </div>
-              <div className="iphones__leafs">
+              <div className="iphones__leavs">
                 <img
-                  className="iphones__leafs-img"
-                  src={require("../../assets/photos/miia/mob-leafs.png")}
-                  alt="leafs"
+                  className="iphones__leavs-img"
+                  src={mob_leaves}
+                  alt="leavs"
                 />
               </div>
             </div>
@@ -155,6 +151,11 @@ export const Miia = () => {
               src={require("../../assets/photos/miia/list.png")}
               alt="list"
             />
+            <img
+              src={laptop_mob}
+              alt="laptop_mob"
+              className="solution__photo-mob"
+            />
           </div>
           <div className="solution__desc">
             <h1 className="solution__desc-title">Our solution</h1>
@@ -220,6 +221,17 @@ export const Miia = () => {
           </div>
         </div>
       </footer>
+      <section className="perogy__next-project next-project">
+        <div className="next-project-content-block eat-miia-footer">
+          <img src={next_proj} alt="next_proj" className="next-project__logo" />
+          <h1 className="next-project-content-block__title title-eat-time">
+            Time to eat
+          </h1>
+          <h4 className="next-project-content-block__subtitle subtitle-eat-time">
+            Next project
+          </h4>
+        </div>
+      </section>
     </div>
   );
 };
