@@ -584,4 +584,3 @@ export const CanadianCenter = () => {
     </div>
   );
 };
-

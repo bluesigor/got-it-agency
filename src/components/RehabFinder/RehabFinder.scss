@@ -1,5 +1,5 @@
-@import "../../styles/blocks/rehab-vars.scss";
-
+@import '../../styles/blocks/rehab-vars.scss';
+@import '../../styles/blocks/mixins.scss';
 .rehab {
     &__basis {
         &-telling {
@@ -10,13 +10,12 @@
 
 .inception {
     position: relative;
-    background: url("../../assets/photos/rehab/head.png");
+    background: url('../../assets/photos/rehab/head.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-
     &__blur {
-        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient( 270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
         opacity: 0.8;
         filter: blur(43px);
         position: absolute;
@@ -24,21 +23,17 @@
         width: 100%;
         bottom: -100px;
     }
-
     &__gen {
         max-width: 1064px;
         margin: 0 auto;
         padding: 100px 20px 0;
-
         &-asset {
             margin-top: 164px;
             max-width: 140px;
-
             &-img {
                 width: 100%;
             }
         }
-
         &-big {
             font-family: 'Crimson Text';
             font-style: normal;
@@ -49,7 +44,6 @@
             color: $title-color;
             margin-top: 8px;
         }
-
         &-small {
             font-family: 'Roboto';
             font-style: normal;
@@ -60,18 +54,15 @@
             max-width: 500px;
             margin-top: 18px;
         }
-
         &-scroll {
             max-width: 85px;
             margin-top: 42px;
             cursor: pointer;
-
             &>img {
                 width: 100%;
             }
         }
     }
-
     &__telling {
         padding-top: 708px;
         padding-bottom: 180px;
@@ -83,7 +74,6 @@
     justify-content: space-between;
     list-style-type: none;
     max-width: 427px;
-
     &__item {
         font-family: 'Roboto';
         font-style: normal;
@@ -102,7 +92,9 @@
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
-
+    @include onMobile {
+        flex-direction: column;
+    }
     &__title {
         font-family: 'Crimson Text';
         font-style: normal;
@@ -111,7 +103,6 @@
         line-height: 60px;
         max-width: 321px;
         color: $title-color;
-
         &-light {
             font-family: 'Crimson Text';
             font-style: normal;
@@ -122,7 +113,6 @@
             color: $default-white;
         }
     }
-
     &__text {
         font-family: 'Roboto';
         font-style: normal;
@@ -131,7 +121,6 @@
         line-height: 28px;
         color: $simple-text;
         max-width: 448px;
-
         &-light {
             color: $default-white;
             font-family: 'Roboto';
@@ -141,7 +130,6 @@
             line-height: 28px;
             max-width: 448px;
         }
-
         &-longer {
             font-family: 'Roboto';
             font-style: normal;
@@ -156,18 +144,21 @@
 
 .route {
     position: relative;
-
+    @include onTablet {
+        display: none;
+    }
+    @include onMobile {
+        display: none;
+    }
     &__photo {
         max-width: 1266px;
         margin: 0 auto;
         padding: 0 20px;
-
         &-item {
             width: 100%;
         }
-
         &-blur {
-            background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient( 270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
             opacity: 0.8;
             filter: blur(43px);
             position: absolute;
@@ -187,15 +178,14 @@
         z-index: 2;
         margin-top: 90px;
         height: 1637px;
-        background: url("../../assets/photos/rehab/paralax-one.png");
+        background: url('../../assets/photos/rehab/paralax-one.png');
         background-size: cover;
         background-attachment: fixed;
     }
-
     &-two {
         margin-top: 72px;
         height: 1360px;
-        background: url("../../assets/photos/rehab/paralax-two.png");
+        background: url('../../assets/photos/rehab/paralax-two.png');
         background-size: cover;
         background-attachment: fixed;
     }
@@ -203,22 +193,18 @@
 
 .srch {
     margin-top: 120px;
-    background: linear-gradient(336.41deg, #0D8FAF -1.91%, #1BC3CE 107.46%);
-
+    background: linear-gradient(336.41deg, #0d8faf -1.91%, #1bc3ce 107.46%);
     &__telling {
         padding-top: 184px;
     }
-
     &__photo {
         display: flex;
         justify-content: flex-end;
         margin-top: 145px;
         padding-bottom: 171px;
         padding-left: 20px;
-
         &-item {
             max-width: 1251px;
-
             &>img {
                 width: 100%;
             }
@@ -231,7 +217,6 @@
     margin: 0 auto;
     margin-top: 223px;
     padding: 0 20px;
-
     &__title {
         font-family: 'Crimson Text';
         font-style: normal;
@@ -246,10 +231,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 18px;
-
+    @include onMobile {
+        flex-direction: column;
+    }
     &__box {
         display: flex;
-
         &-title {
             font-family: 'Crimson Text';
             font-style: normal;
@@ -258,22 +244,22 @@
             line-height: 166px;
             letter-spacing: -0.02em;
             color: $big-letter;
+            @include onMobile {
+                font-size: 88px;
+                line-height: 100%;
+            }
         }
-
         &-txt {
             margin-top: 35px;
             margin-left: 24px;
-
             &> {
                 color: $title-color;
             }
-
             &>p {
                 margin-top: 7px;
                 color: $alphabet-text;
             }
         }
-
         &:first-of-type {
             &>.box-txt {
                 &>h3 {
@@ -284,7 +270,6 @@
                     line-height: 42px;
                     text-transform: capitalize;
                 }
-
                 &>p {
                     font-family: 'Crimson Text';
                     font-style: normal;
@@ -293,10 +278,12 @@
                     line-height: 37px;
                     text-transform: capitalize;
                     width: 347px;
+                    @include onMobile {
+                        max-width: 250px;
+                    }
                 }
             }
         }
-
         &:nth-of-type(2) {
             &>.box-txt {
                 &>h3 {
@@ -307,7 +294,6 @@
                     line-height: 38px;
                     text-transform: capitalize;
                 }
-
                 &>p {
                     font-family: 'Roboto';
                     font-style: normal;
@@ -327,7 +313,6 @@
     margin: 0 auto;
     margin-top: 160px;
     padding: 0 20px;
-
     &__title {
         font-family: 'Crimson Text';
         font-style: normal;
@@ -337,11 +322,9 @@
         color: $title-color;
         text-align: center;
     }
-
     &__palette {
         width: 100%;
         margin-top: 42px;
-
         &-image {
             width: 100%;
         }
