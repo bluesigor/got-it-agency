@@ -1,4 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Reno.scss";
 import tabletRound from "../../assets/photos/reno/tablet-round.svg";
 import orange from "../../assets/photos/reno/orange-palette.svg";
@@ -15,16 +16,18 @@ import dotsSix from "../../assets/photos/reno/dots-6.svg";
 import roundSix from "../../assets/photos/reno/round-6.svg";
 import tabletSix from "../../assets/photos/reno/tablet-2.svg";
 import orangeRound from "../../assets/photos/reno/orange-round-2.svg";
-import tabletOne from "../../assets/photos/reno/mini-tablet-1.svg";
 import tabletOneAdded from "../../assets/photos/reno/tabletOneAdded.svg";
 import tabletTwoAdded from "../../assets/photos/reno/mini-tablet-1-added.svg";
-
-import tabletTwo from "../../assets/photos/reno/mini-tablet-2.svg";
+import mob_elipse from "../../assets/photos/reno/mob-elipse.svg";
+import next_proj from "../../assets/photos/reno/next-proj-miia.svg";
 import tabletThree from "../../assets/photos/reno/mini-tablet-3.svg";
 import tabletFour from "../../assets/photos/reno/mini-tablet-4.svg";
 import decorationBlue from "../../assets/photos/reno/blue-round-bottom.svg";
 import decorationLike from "../../assets/photos/reno/likes-round.svg";
-import { Link } from "react-router-dom";
+import newme from "../../assets/photos/canadian-center/newme.svg";
+import miia from "../../assets/photos/canadian-center/miia.svg";
+import reno from "../../assets/photos/canadian-center/reno.svg";
+import catering from "../../assets/photos/canadian-center/catering.svg";
 
 export const Reno = () => {
   return (
@@ -152,6 +155,11 @@ export const Reno = () => {
               <img src={phoneRound} alt="round" />
             </div>
           </div>
+          <img
+            src={mob_elipse}
+            alt="mob_elipse"
+            className="reno-general-five__mob-elipse"
+          />
           <div className="reno-general-five__bid">
             <img
               className="reno-general-five__bid-img"
@@ -187,24 +195,24 @@ export const Reno = () => {
       <div className="reno__tablets">
         <div className="reno__tablets-first">
           <img
-            className="tablets-first-picture second-tablet-added"
+            className="tablets-first-picture second-tablet-added  tab-mob-first "
             src={tabletOneAdded}
             alt="tablet"
           />
           <img
-            className="tablets-first-picture second-tablet-added"
+            className="tablets-first-picture second-tablet-added tab-mob-second"
             src={tabletTwoAdded}
             alt="tablet"
           />
         </div>
         <div className="reno__tablets-second">
           <img
-            className="tablets-second-picture second-tablet-added"
+            className="tablets-second-picture second-tablet-added tab-mob-second "
             src={tabletThree}
             alt="tablet"
           />
           <img
-            className="tablets-second-picture second-tablet-added"
+            className="tablets-second-picture second-tablet-added tab-mob-first"
             src={tabletFour}
             alt="tablet"
           />
@@ -218,57 +226,54 @@ export const Reno = () => {
           <img src={decorationLike} alt="orange round" />
         </div>
       </div>
-      <footer className="miia__gen-check check">
-        <h1 className="check__title rehab-bottom-gen">
-          Check out more projects
-        </h1>
-        <div className="check__projects">
-          <div className="check__projects-inset inset">
-            <Link to="/miia/" className="inset__photo">
+      <footer className="perogy-projects-footer projects-footer">
+        <h1 className="projects-footer__title">Check out more projects</h1>
+        <ul className="projects-footer__list">
+          <li>
+            <Link to={"/portfolio/miia"}>
               <img
-                className="inset__photo-item"
-                src={require("../../assets/photos/miia/miia.png")}
-                alt="Rehab Finder"
+                className="projects-footer__list-logo"
+                src={miia}
+                alt="miia"
               />
             </Link>
-            <h3 className="inset__title rehab-bottom-tit">Miia</h3>
-            <p className="inset__text">E-commerce platform</p>
-          </div>
-          <div className="check__projects-inset inset">
-            <Link to="/reno/" className="inset__photo-item">
+          </li>
+          <li>
+            <Link to={"/portfolio/clinics"}>
               <img
-                className="inset__photo"
-                src={require("../../assets/photos/miia/rehab.png")}
-                alt="Reno"
+                className="projects-footer__list-logo"
+                src={newme}
+                alt="newme"
               />
             </Link>
-            <h3 className="inset__title rehab-bottom-tit">Rehab Finder</h3>
-            <p className="inset__text">MCQ platform</p>
-          </div>
-          <div className="check__projects-inset inset">
-            <Link to="/newme-clinics/" className="inset__photo">
+          </li>
+          <li>
+            <Link to={"/portfolio/reno"}>
               <img
-                className="inset__photo-item"
-                src={require("../../assets/photos/miia/newme.png")}
-                alt="NewMe clinics"
+                className="projects-footer__list-logo reno"
+                src={reno}
+                alt="reno"
               />
             </Link>
-            <h3 className="inset__title rehab-bottom-tit">NewMe Clinics</h3>
-            <p className="inset__text">Online beauty clinic</p>
-          </div>
-          <div className="check__projects-inset inset">
-            <Link to="/ivala-learn/" className="inset__photo">
+          </li>
+          <li>
+            <Link to={"/portfolio/reno"}>
               <img
-                className="inset__photo-item"
-                src={require("../../assets/photos/miia/ivala.png")}
-                alt="Ivala learn"
+                className="projects-footer__list-logo"
+                src={catering}
+                alt="catering"
               />
             </Link>
-            <h3 className="inset__title rehab-bottom-tit">IVALA Learn</h3>
-            <p className="inset__text">MCQ platform</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </footer>
+      <section className="perogy__next-project next-project">
+        <div className="next-project-content-block">
+          <h1 className="next-project-content-block__title">Miia</h1>
+          <h4 className="next-project-content-block__subtitle">Next project</h4>
+        </div>
+        <img src={next_proj} alt="next_proj" className="next-project__logo" />
+      </section>
     </div>
   );
 };
